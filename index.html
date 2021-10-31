@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phép tính JS Cơ bản</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="height: 2000px;">
+    <!-- bài tập 1 -->
+    <div>
+        <input type="text" placeholder="Nhập số a" id="a"> 
+        <input type="text" placeholder=" + - * / " id="b"> 
+        <input type="text" placeholder="Nhập số b" id="c"> 
+        <button type="button" id="calc">Tính</button>
+        <input type="text" placeholder="Kết quả" id="d"> 
+
+    </div>
+    <!-- bài tập 2 -->
+    <br><hr><br>
+    <div>
+        <input type="text" placeholder="In n số" id="nSo" >
+        <button onclick="inso1denN()">hiển thị</button>
+        <div style="height: fit-content; border: blue; border-style: solid;" id="showNSo" >&nbsp;</div>
+    </div>
+    <!-- Bài tập 3 -->
+    <br><hr><br>
+    bai tap nhap nam sinh <button id="bt3" onclick="namsinh()">Nhập năm sinh</button>
+    <!-- Bài tập 4 -->
+    <br><hr><br>
+    <div>
+        <form action="Proccess" method="post">
+                <fieldset style="width: 300px; border-style: dashed;">
+                <legend style="color: #00F;">ĐĂNG NHẬP</legend>
+                <table cellpadding="10">
+                    <tr>
+                        <td>Username</td>
+                        <td> <input type="text" value="" id="tk" placeholder="Điền tên đăng nhập"> </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td> <input type="text" value="" id="mk" placeholder="Điền mật khẩu tài khoản"> </td>
+                    </tr>
+                    <tr>
+                        <td>Re-Password</td>
+                        <td> <input type="text" value="" id="rmk" placeholder="Nhập lại khẩu tài khoản"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div style="color: rgb(82, 82, 82); border-width: 1px; background-color: rgb(252, 239, 239); width: 90px; margin-left: 100px; text-align: center; border-style: solid;" onclick="return validate()">Đăng nhập</div>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+    </form>
+    <!-- Bài tập 5 -->
+    <br><hr><br>
+    Checkbook trong JS: 
+    <input type="checkbox" value="false" id="chkLike" onclick="like()"> DO YOU LIKE INFOMATION TECHNOLOGY ?
+    <!-- Bài tập 6 -->
+    <br><hr><br>
+    Chọn giói tính của bạn
+    <input type="radio" name="gtinh" id="" value="Nam">Nam
+    <input type="radio" name="gtinh" id="" value="Nữ">Nữ
+    <button id="gioitinh" onclick="gioitinh()">Show</button>
+    <!-- Bài tập 7 -->
+    <br><hr><br>
+    <p id="ketnoi">Kết nối không thành công, thử kết nối lại trong <input type="text" name="" id="textBox" style="width: 15px; text-align: center; border: 0px; color: #00F;"> giây.</p>
+    <!-- Bài tập 8 -->
+    <br><hr><br>
+    <div style="background-color: blanchedalmond;">
+        Bài tập 8<p id="thaythechuoi">KQ:</p>
+    </div>
+    <!-- Bài tập 9 -->
+    <br><hr><br>
+    <div style="align-items: baseline;">
+        <button id="addNum">Cộng</button>
+        <input type="text" style="width: 30px; border: none; text-align: center;" placeholder="" id="NumberVal">
+        <button id="subNum"> Trừ</button>
+    </div>
+    <!--  -->
+    <div class="popup">
+        <a href="#" id="an" onclick="tatquangcao()"><u>Tắt quảng cáo</u></a>
+        <img src="https://cdn.tgdd.vn/Files/2021/10/04/1387824/windows11_5_1280x720-800-resize.jpg" id="quangcao">
+        <a href="#" id="hien" onclick="hienquangcao()" style="display: none;" >Hiện quảng cáo...</a>
+    </div>
+    <!--  -->
+    <script src="main.js"></script>
+</body>
+</html>

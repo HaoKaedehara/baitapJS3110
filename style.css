@@ -1,0 +1,19 @@
+.popup{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.popup img{
+    border: 2px solid #03f;
+    height: 200px;
+}
+.popup a{
+    transition: all ease-in-out 0.5s;
+    display: block;
+    width: 150px;
+    color: white;
+    padding: 5px;
+    text-decoration: right;
+    font-size: 15px;
+    background-color: rgb(34, 78, 255);
+}
